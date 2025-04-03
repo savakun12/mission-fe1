@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-large {
+    @apply font-dm-sans text-[18px] leading-[25.2px] tracking-[0.2px];
+}
+.body-medium {
+    @apply font-dm-sans text-[16px] leading-[22.4px] tracking-[0.2px];
+}
+.body-small {
+    @apply font-dm-sans text-[14px] leading-[19.6px] tracking-[0.2px];
+}
+.heading-1 {
+    @apply font-poppins text-[48px] font-bold leading-[52.8px];
+}
+.heading-3 {
+    @apply font-poppins text-[32px] leading-[35.2px];
+}
+.heading-4 {
+    @apply font-poppins text-[24px] leading-[28.8px];
+}
+.heading-5 {
+    @apply font-poppins text-[20px] leading-[24px];
+}
+.heading-6 {
+    @apply font-poppins text-[18px] leading-[21.6px];
+}
+.subtitle {
+    @apply font-poppins text-[16px] leading-[24px] tracking-[0.15px];
+}
+
+@media (max-width: 1200px) {
+    .heading-1 {
+        @apply text-[24px] leading-[26.4px];
+    }
+    .body-medium {
+        @apply text-[14px] leading-[19.6px];
+    }
+    .body-large {
+        @apply text-[14px] leading-[19.6px];
+    }
+    .heading-3 {
+        @apply text-[24px] leading-[26.4px];
+    }
+    .heading-6 {
+        @apply text-[16px] leading-[19.2px];
+    }
+    .heading-4 {
+        @apply text-[20px] leading-[24px];
+    }
+    .body-small {
+        @apply text-[12px] leading-[16.8px];
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield;
+}

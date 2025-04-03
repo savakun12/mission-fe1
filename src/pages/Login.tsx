@@ -1,0 +1,17 @@
+import LoginForm from "../components/LoginForm"
+import Navbar from "../components/Navbar"
+
+const Login = () => {
+    return (
+        <div className="flex min-h-screen w-screen flex-col items-center bg-[#fffdf3]">
+            <header className="flex w-screen justify-center border border-b-[#3A35411F] bg-white">
+                <Navbar />
+            </header>
+            <main className="flex h-full max-h-full w-full max-w-[360px] flex-col items-center justify-center gap-[24px] px-[20px] py-[28px] sm:max-h-full sm:w-[1440px] sm:gap-[36px] sm:px-[120px] sm:py-[64px]">
+                <LoginForm />
+            </main>
+        </div>
+    )
+}
+
+export default Login
